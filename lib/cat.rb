@@ -1,4 +1,4 @@
 require 'pry'
 class Cat
-  binding.pry
+  #binding.pry
 end
