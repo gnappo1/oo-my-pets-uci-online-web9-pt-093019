@@ -5,3 +5,5 @@ puts "I just created a Rakefile! Welcome to this interactive environment"
 def reload!
   Dir.glob("*lib*/*.rb").each(&:load)
 end
+
+task: "Pry"
