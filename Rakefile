@@ -7,6 +7,6 @@ def reload!
 end
 
 desc "Starting the playground sesh:"
-task :pry do
+task :console do
   Pry.start
 end
