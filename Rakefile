@@ -6,7 +6,7 @@ def reload!
   Dir.glob("*lib*/*.rb").each(&:load)
 end
 
-desc: "Starting the playground sesh:"
-task: "Pry" do
-  
+desc "Starting the playground sesh:"
+task :pry do
+  Pry.start
 end
