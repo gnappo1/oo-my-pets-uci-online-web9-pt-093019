@@ -28,12 +28,16 @@ class Owner
     Dog.new(name, self)
   end
   
+  def change_mood(collection, mood)
+    collection.each {|el| el.mood = "happy"}
+  end
+  
   def walk_dogs
-    dogs.each {|dog| dog.mood = "happy"}
+    change_mood(dogs, "happy")
   end
   
   def feed_cats
-    cats.each {|cat| cat.mood = "happy"}
+    change_mood(cats, "happy")
   end
   
   def sell_pets
