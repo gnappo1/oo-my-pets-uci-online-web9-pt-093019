@@ -40,9 +40,14 @@ class Owner
     change_mood(cats, "happy")
   end
   
+  def remove_owner(collection)
+    collection.each {|el| el.owner = nil}
+  end
+  
   def sell_pets
     dogs.each {|el| el.mood = "nervous"}
     cats.each {|el| el.mood = "nervous"}
+    remove_owner(dogs)
   end
   
   def list_pets
