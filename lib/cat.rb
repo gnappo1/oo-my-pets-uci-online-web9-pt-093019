@@ -10,7 +10,7 @@ class Cat
   end
   
   def self.all
-    @@all.dup.freeze
+    @@all
   end
   
   private
