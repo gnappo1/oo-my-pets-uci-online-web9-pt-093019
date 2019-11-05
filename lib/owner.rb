@@ -29,7 +29,7 @@ class Owner
   end
   
   def change_mood(collection, mood)
-    collection.collect {|el| el.mood = "happy"}
+    collection.each {|el| el.mood = "happy"}
   end
   
   def walk_dogs
