@@ -29,7 +29,7 @@ class Owner
   end
   
   def change_mood(collection, mood)
-    collection.each {|el| el.mood = "happy"}
+    collection.each {|el| el.mood = mood}
     collection
   end
   
