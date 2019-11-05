@@ -34,7 +34,6 @@ class Owner
   
   def change_mood(collection, mood)
     collection.each {|el| el.mood = mood}
-    collection
   end
   
   def walk_dogs
@@ -47,7 +46,6 @@ class Owner
   
   def remove_owner(collection)
     collection.each {|el| el.owner = nil}
-    collection
   end
   
   def sell_pets
