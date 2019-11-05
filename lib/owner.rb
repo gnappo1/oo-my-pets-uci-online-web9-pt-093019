@@ -41,7 +41,7 @@ class Owner
   end
   
   def remove_owner(collection)
-    collection.collect {|el| el.owner = nil}
+    collection.each {|el| el.owner = nil}
   end
   
   def sell_pets
@@ -51,7 +51,7 @@ class Owner
   end
   
   def list_pets
-    
+    "I have #{dogs.count} dog(s), and #{cats.count} dog(s)."
   end
   
   def self.all
