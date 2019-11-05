@@ -30,16 +30,15 @@ class Owner
   
   def change_mood(collection, mood)
     collection.each {|el| el.mood = "happy"}
+    collection
   end
   
   def walk_dogs
     change_mood(dogs, "happy")
-    dogs
   end
   
   def feed_cats
     change_mood(cats, "happy")
-    cats
   end
   
   def remove_owner(collection)
