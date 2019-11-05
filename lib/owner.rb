@@ -41,8 +41,7 @@ class Owner
   end
   
   def sell_pets
-    change_mood(cats, "nervous")
-    change_mood(dogs, "nervous")
+    collection.each {|el| el.mood = "nervous"}
   end
   
   def list_pets
