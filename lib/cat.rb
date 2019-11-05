@@ -1,9 +1,14 @@
 require 'pry'
 class Cat
-  #binding.pry
+  attr_accessor :mood
+  attr_reader :name, :owner
   @@all = []
   
+  def initialzie(name, owner)
+    @name, @owner, @mood = name, owner, "nervous"
+  end
+  
   def self.all
-    @@all
+    @@all.dup.freeze
   end
 end
