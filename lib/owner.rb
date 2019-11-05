@@ -50,7 +50,7 @@ class Owner
   
   def sell_pets
     change_mood(pets, "nervous")
-    remove_owner(dogs)
+    remove_owner(pets)
   end
   
   def list_pets
