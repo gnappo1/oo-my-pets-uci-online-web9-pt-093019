@@ -41,7 +41,8 @@ class Owner
   end
   
   def sell_pets
-    change_mood(cats, "nervous") && change_mood(dogs, "nervous")
+    change_mood(cats, "nervous")
+    change_mood(dogs, "nervous")
   end
   
   def list_pets
