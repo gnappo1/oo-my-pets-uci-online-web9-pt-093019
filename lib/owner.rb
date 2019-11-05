@@ -34,14 +34,17 @@ class Owner
   
   def walk_dogs
     change_mood(dogs, "happy")
+    dogs
   end
   
   def feed_cats
     change_mood(cats, "happy")
+    cats
   end
   
   def remove_owner(collection)
     collection.each {|el| el.owner = nil}
+    collection
   end
   
   def sell_pets
