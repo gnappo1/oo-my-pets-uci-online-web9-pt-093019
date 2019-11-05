@@ -12,4 +12,9 @@ class Dog
   def self.all
     @@all.dup.freeze
   end
+  
+  private
+  def save
+    @@all << self
+  end
 end
