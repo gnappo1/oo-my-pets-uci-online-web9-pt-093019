@@ -29,7 +29,7 @@ class Owner
   end
   
   def change_mood(collection, mood)
-    collection.each {|el| el.mood = "happy"}
+    collection.collect {|el| el.mood = "happy"}
   end
   
   def walk_dogs
@@ -41,12 +41,12 @@ class Owner
   end
   
   def remove_owner(collection)
-    collection.each {|el| el.owner = nil}
+    collection.collect {|el| el.owner = nil}
   end
   
   def sell_pets
-    dogs.each {|el| el.mood = "nervous"}
-    cats.each {|el| el.mood = "nervous"}
+    change_mood(cats, "nervous")
+    change_mood(dogs, "nervous")
     remove_owner(dogs)
   end
   
